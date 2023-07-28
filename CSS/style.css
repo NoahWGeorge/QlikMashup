@@ -13,7 +13,7 @@ body:not(.sidebar-active) .nav-item:hover {
     display: flex;
   }
 
-<<<<<<< HEAD
+
   h1{
     font-size: medium;
     text-align: center;
@@ -24,12 +24,7 @@ body:not(.sidebar-active) .nav-item:hover {
     font-size: small;
     text-align: center;
     font-weight: 200;
-=======
-  .h1 {
-    color: blue;
->>>>>>> 02876cfbdc3c871ae1e617598e6ab8705d72c75
   }
-  
   .sidebar {
     background-color: darkgrey;
     color: #fff;
@@ -95,11 +90,11 @@ body:not(.sidebar-active) .nav-item:hover {
   }
 
   .toggle-button:not(.active) {
-    background-image: url('../PICS/arrowForward.png'); /* Replace 'forward_arrow.png' with the image URL of the forward arrow */
+    background-image: url('../PICS/arrowBackward.png'); /* Replace 'forward_arrow.png' with the image URL of the forward arrow */
   }
 
   .toggle-button.active {
-    background-image: url('../PICS/arrowBackward.png'); /* Replace 'backward_arrow.png' with the image URL of the backward arrow */
+    background-image: url('../PICS/arrowForward.png'); /* Replace 'backward_arrow.png' with the image URL of the backward arrow */
   }
 
   
@@ -115,5 +110,4 @@ body:not(.sidebar-active) .nav-item:hover {
       width: 0;
     }
   }
-  
   
