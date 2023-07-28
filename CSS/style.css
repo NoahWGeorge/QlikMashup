@@ -90,11 +90,11 @@ body:not(.sidebar-active) .nav-item:hover {
   }
 
   .toggle-button:not(.active) {
-    background-image: url('../PICS/arrowBackward.png'); /* Replace 'forward_arrow.png' with the image URL of the forward arrow */
+    border: none;/* background-image: url('../PICS/arrowBackward.png'); Replace 'forward_arrow.png' with the image URL of the forward arrow */
   }
 
   .toggle-button.active {
-    background-image: url('../PICS/arrowForward.png'); /* Replace 'backward_arrow.png' with the image URL of the backward arrow */
+    border: none;/*background-image: url('../PICS/arrowForward.png'); Replace 'backward_arrow.png' with the image URL of the backward arrow */
   }
 
   
