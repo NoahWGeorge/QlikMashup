@@ -55,6 +55,7 @@ body:not(.sidebar-active) .nav-item:hover {
   
   .sidebar li {
     padding: 10px;
+    
   }
   
   .sidebar a {
@@ -67,6 +68,7 @@ body:not(.sidebar-active) .nav-item:hover {
   .sidebar a:hover {
     background-color: #555;
     font-size: 1.1em;
+    
   }
   
   .content {
@@ -80,7 +82,7 @@ body:not(.sidebar-active) .nav-item:hover {
     padding: 5px 10px;
     cursor: pointer;
     position: absolute;
-    top: 45%;
+    top: 12%;
     right: -5px;
     background-size: contain;
     background-repeat: no-repeat;
