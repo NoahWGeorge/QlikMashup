@@ -5,10 +5,12 @@
     const toggleButton = document.getElementById('toggleButton');
     const sidebar = document.getElementById('sidebar');
     const navItems = document.querySelectorAll('.nav-item');
+    const toggleArrow = document.getElementById('navArrow');
   
     toggleButton.addEventListener('click', function() {
       sidebar.classList.toggle('active');
       toggleButton.classList.toggle('active');
+      toggleArrow.classList.toggle('active');
       document.body.classList.toggle('sidebar-active');
   
       // Remove the 'active' class from all navigation items when the button is clicked
