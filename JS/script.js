@@ -8,6 +8,7 @@
   
     toggleButton.addEventListener('click', function() {
       sidebar.classList.toggle('active');
+      toggleButton.classList.toggle('active');
       document.body.classList.toggle('sidebar-active');
   
       // Remove the 'active' class from all navigation items when the button is clicked

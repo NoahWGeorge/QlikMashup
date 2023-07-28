@@ -7,9 +7,22 @@ body {
 body:not(.sidebar-active) .nav-item:hover {
     background-color: #555;
   }
+
   
   .container {
     display: flex;
+  }
+
+  h1{
+    font-size: medium;
+    text-align: center;
+    color: navy;
+    font-weight: bolder;
+  }
+  h2{
+    font-size: small;
+    text-align: center;
+    font-weight: 200;
   }
   
   .sidebar {
@@ -26,10 +39,18 @@ body:not(.sidebar-active) .nav-item:hover {
   .sidebar.active {
     transform: translateX(0);
   }
+
+  .sidebar:not(.active) h1,
+  .sidebar:not(.active) h2,
+  .sidebar:not(.active) a {
+  visibility: hidden;
+}
+
   
   .sidebar ul {
     list-style: none;
     padding: 0;
+    text-align: center;
   }
   
   .sidebar li {
@@ -39,10 +60,13 @@ body:not(.sidebar-active) .nav-item:hover {
   .sidebar a {
     color: #fff;
     text-decoration: none;
+    display: block; 
+    padding: 10px; 
   }
   
   .sidebar a:hover {
     background-color: #555;
+    font-size: 1.1em;
   }
   
   .content {
@@ -57,24 +81,27 @@ body:not(.sidebar-active) .nav-item:hover {
     cursor: pointer;
     position: absolute;
     top: 20px;
-    right: 20px;
-    background-size: 20px 20px;
-    
+    right: 5px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
     
   }
 
-  /*.toggle-button:not(.active) {
+  .toggle-button:not(.active) {
     background-image: url('../PICS/arrowForward.png'); /* Replace 'forward_arrow.png' with the image URL of the forward arrow */
-  /*}
+  }
 
-  /*.toggle-button.active {
+  .toggle-button.active {
     background-image: url('../PICS/arrowBackward.png'); /* Replace 'backward_arrow.png' with the image URL of the backward arrow */
-  
+  }
 
   
   
   .nav-item.active {
     background-color: #555;
+    width: 100%;
   }
 
   
