@@ -11,6 +11,10 @@ body:not(.sidebar-active) .nav-item:hover {
   .container {
     display: flex;
   }
+
+  .h1 {
+    color: blue;
+  }
   
   .sidebar {
     background-color: darkgrey;
