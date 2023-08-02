@@ -1,14 +1,25 @@
+/* variables ----------------------------------------------------------------------------------------------------*/
+:root {
+  --navy-blue: #0076A9;
+  --navy-dblue: #022A3A;
+  --off-white: #F3F5F8;
+  --white: #fff;
+}
+
+/* body -------------------------------------------------------------------------------------------------------*/
+
 body {
     margin: 0;
     padding: 0;
     font-family: "Roboto", Arial, sans-serif;
-    background-color: #F3F5F8;
+    background-color: var(--off-white);
   }
 
 body:not(.sidebar-active) .nav-item:hover {
-    background-color: #0076A9;
+    background-color: var(--navy-blue);
   }
 
+/* Flexbox containers -------------------------------------------------------------------------------------------*/
   .container-body {
     display: flex;
   }
@@ -41,22 +52,25 @@ body:not(.sidebar-active) .nav-item:hover {
     background-color: red;
   }
 
+
+/* Font Classes -------------------------------------------------------------------------------------------*/
+
   h1{
     font-family: "Rubik", Arial, sans-serif;
     text-align: left;
-    color: #022A3A;
+    color: var(--navy-dblue);
     font-size: 34px;
     font-weight: 500;
   }
 
   h2{
-    color: #022A3A;
+    color: var(--navy-dblue);
     text-align: left;
     font-weight: 300;
   }
   
 
-
+/* Sidbar -------------------------------------------------------------------------------------------*/
   
   .container-sidebar.active {
     width: 240px;
@@ -88,7 +102,7 @@ body:not(.sidebar-active) .nav-item:hover {
   }
   
   .container-sidebar a:hover {
-    background-color: #0076A9;
+    background-color: var(--navy-blue);
     color: #fff;
     
   }
@@ -123,10 +137,12 @@ body:not(.sidebar-active) .nav-item:hover {
   
   
   .nav-item.active {
-    background-color: #555;
+    background-color: var(--navy-blue);
     width: 100%;
   }
 
+
+  /* Media Queries 768px -------------------------------------------------------------------------------------------*/
   
   @media screen and (max-width: 768px) {
     .sidebar.active {
