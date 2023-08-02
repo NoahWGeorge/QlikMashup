@@ -46,11 +46,31 @@ body:not(.sidebar-active) .nav-item:hover {
   }
 
   .container-main-section {
+    display: flex;
+    flex-direction: column;
     padding: 20px;
     margin: 20px;
-    width: 600px;
-    height: 600px;
-    background-color: red;
+    width: 1100px;
+    height: 800px;
+  }
+
+  .section-header {
+    display: flex;
+    height: 100px;
+  }
+
+  .section-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .content-box {
+    display: flex;
+    width: 525px;
+    height: 350px;
+    margin: 10px;
+    background-color: var(--white);
+    border-radius: 14px;
   }
 
 
@@ -61,12 +81,13 @@ body:not(.sidebar-active) .nav-item:hover {
     text-align: left;
     color: var(--navy-dblue);
     font-size: 34px;
-    font-weight: 500;
+    font-weight: 600;
   }
 
   h2{
     color: var(--navy-dblue);
     text-align: left;
+    font-size: 32px;
     font-weight: 300;
   }
   
