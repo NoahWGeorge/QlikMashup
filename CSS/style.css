@@ -1,12 +1,12 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: "Rubik", Arial, sans-serif;
+    font-family: "Roboto", Arial, sans-serif;
     background-color: #F3F5F8;
   }
 
 body:not(.sidebar-active) .nav-item:hover {
-    background-color: #555;
+    background-color: #0076A9;
   }
 
   
@@ -16,6 +16,7 @@ body:not(.sidebar-active) .nav-item:hover {
 
 
   h1{
+    font-family: "Rubik", Arial, sans-serif;
     text-align: left;
     color: #022A3A;
     font-size: 34px;
@@ -23,9 +24,9 @@ body:not(.sidebar-active) .nav-item:hover {
   }
 
   h2{
-    font-size: small;
+    color: #022A3A;
     text-align: left;
-    font-weight: 800;
+    font-weight: 300;
   }
 
   .sidebar {
@@ -37,6 +38,7 @@ body:not(.sidebar-active) .nav-item:hover {
     overflow: hidden;
     position: relative;
     transform: translate(-115px);
+    
   }
   
   .sidebar.active {
@@ -53,7 +55,7 @@ body:not(.sidebar-active) .nav-item:hover {
   .sidebar ul {
     list-style: none;
     padding: 0;
-    text-align: center;
+    text-align: left;
   }
   
   .sidebar li {
@@ -69,8 +71,8 @@ body:not(.sidebar-active) .nav-item:hover {
   }
   
   .sidebar a:hover {
-    background-color: #555;
-    font-size: 1.1em;
+    background-color: #0076A9;
+    color: #fff;
     
   }
   
