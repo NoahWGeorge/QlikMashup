@@ -27,7 +27,7 @@ body:not(.sidebar-active) .nav-item:hover {
   .container-sidebar {
     background-color: #fff;
     color: #fff;
-    width: 110px;
+    width: 100px;
     height: 100vh;
     transition: all 0.3s;
     overflow: hidden;
@@ -97,7 +97,7 @@ body:not(.sidebar-active) .nav-item:hover {
 /* Sidbar -------------------------------------------------------------------------------------------*/
   
   .container-sidebar.active {
-    width: 240px;
+    width: 200px;
   }
 
   .container-sidebar:not(.active) h1,
