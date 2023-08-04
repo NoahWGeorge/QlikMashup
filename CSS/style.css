@@ -116,8 +116,7 @@ body:not(.sidebar-active) .nav-item:hover {
   }
 
   .container-sidebar:not(.active) h1,
-  .container-sidebar:not(.active) h2,
-  .container-sidebar:not(.active) a {
+  .container-sidebar:not(.active) .nav-text {
   visibility: hidden;
 }
 
@@ -178,6 +177,28 @@ body:not(.sidebar-active) .nav-item:hover {
   .nav-item.active {
     background-color: var(--navy-blue);
     width: 100%;
+  }
+
+  /* Circle styling */
+  .circle {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 2px solid var(--navy-dblue);
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+
+/* Active circle styling */
+  .nav-item.active .circle {
+    background-color: var(--navy-dblue);
+  }
+
+
+  /* Adjust padding/margin for the circles when sidebar is not active */
+  .container-sidebar:not(.active) .nav-item {
+    padding-left: 18px; /* You may need to adjust this value */
   }
 
 
