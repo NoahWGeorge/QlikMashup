@@ -27,7 +27,7 @@ body:not(.sidebar-active) .nav-item:hover {
   .container-sidebar {
     background-color: #fff;
     color: #fff;
-    width: 100px;
+    width: 80px;
     height: 100vh;
     transition: all 0.3s;
     overflow: hidden;
@@ -112,7 +112,7 @@ body:not(.sidebar-active) .nav-item:hover {
 /* Sidbar -------------------------------------------------------------------------------------------*/
   
   .container-sidebar.active {
-    width: 200px;
+    width: 168px;
   }
 
   .container-sidebar:not(.active) h1,
@@ -136,7 +136,8 @@ body:not(.sidebar-active) .nav-item:hover {
     color: #022A3A;
     text-decoration: none;
     display: block; 
-    padding: 10px; 
+    padding: 10px;
+   
   }
   
   .container-sidebar a:hover {
@@ -179,6 +180,7 @@ body:not(.sidebar-active) .nav-item:hover {
     width: 100%;
   }
 
+
   /* Circle styling */
   .circle {
     display: inline-block;
@@ -198,7 +200,7 @@ body:not(.sidebar-active) .nav-item:hover {
 
   /* Adjust padding/margin for the circles when sidebar is not active */
   .container-sidebar:not(.active) .nav-item {
-    padding-left: 18px; /* You may need to adjust this value */
+    padding-left: 18px; 
   }
 
 
