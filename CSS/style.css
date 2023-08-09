@@ -110,20 +110,23 @@ body:not(.sidebar-active) .nav-item:hover {
   
 
 /* Sidbar -------------------------------------------------------------------------------------------*/
-  
+  .nav-content{
+    display: flex;
+    align-items: center;
+  }
+
   .container-sidebar.active {
     width: 168px;
   }
 
   .container-sidebar:not(.active) h1,
-  .container-sidebar:not(.active) .item-label {
+  .container-sidebar:not(.active) .nav-text {
     visibility: hidden;
-}
+  }
   .container-sidebar:not(.active) .circle {
     visibility: visible;
-}
+  }
 
-  
   .container-sidebar ul {
     list-style: none;
     padding: 0;
@@ -141,6 +144,11 @@ body:not(.sidebar-active) .nav-item:hover {
     display: block; 
     padding: 10px;
    
+  }
+
+  .container-sidebar a.nav-item{
+    display: flex;
+    align-items: center;
   }
   
   .container-sidebar a:hover {
@@ -174,13 +182,17 @@ body:not(.sidebar-active) .nav-item:hover {
  .fa-chevron-left.active {
   transition: all 0.3s;
   transform: rotate(180deg);
-}
+  }
 
   
   
   .nav-item.active {
     background-color: var(--navy-blue);
     width: 100%;
+  }
+
+  .nav-item {
+    padding-left: 18px;
   }
 
 
@@ -196,21 +208,23 @@ body:not(.sidebar-active) .nav-item:hover {
   }
 
   .nav-item:focus .circle {
-    box-shadow: 0 0 5px 2px rgba(0, 118, 169, 0.5);  /* This gives a soft glow effect. */
-    outline: none;  /* Removes the default outline. */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
   }
-  
+
+  .container-sidebar .nav-item .circle {
+    width: 12px;
+    height: 12px;
+  }
+
 
 /* Active circle styling */
   .nav-item.active .circle {
     background-color: var(--navy-dblue);
   }
 
-
-  /* Adjust padding/margin for the circles when sidebar is not active */
-  .container-sidebar:not(.active) .nav-item {
-    padding-left: 18px; 
-  }
 
 
   /* Media Queries 768px -------------------------------------------------------------------------------------------*/

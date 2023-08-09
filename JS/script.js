@@ -13,18 +13,21 @@
       toggleArrow.classList.toggle('active');
       document.body.classList.toggle('sidebar-active');
   
-      // Remove the 'active' class from all navigation items when the button is clicked
-      //navItems.forEach(item => item.classList.remove('active'));
+      
     });
   
     navItems.forEach(item => {
       item.addEventListener('click', function() {
-        // Remove the 'active' class from all navigation items
-        //navItems.forEach(item => item.classList.remove('active'));
-  
-        // Add the 'active' class to the clicked item
-        this.classList.add('active');
-  
+    
+        // If the clicked item already has the 'active' class, remove it.
+        // Otherwise, remove the 'active' class from all other items and add it to the clicked item.
+        if (this.classList.contains('active')) {
+          this.classList.remove('active');
+        } else {
+          navItems.forEach(item => item.classList.remove('active'));
+          this.classList.add('active');
+        }
+    
         // Hide the sidebar when a navigation item is clicked (only for small screens)
         if (window.innerWidth <= 768) {
           sidebar.classList.remove('active');
