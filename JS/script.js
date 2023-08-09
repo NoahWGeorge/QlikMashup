@@ -14,13 +14,13 @@
       document.body.classList.toggle('sidebar-active');
   
       // Remove the 'active' class from all navigation items when the button is clicked
-      navItems.forEach(item => item.classList.remove('active'));
+      //navItems.forEach(item => item.classList.remove('active'));
     });
   
     navItems.forEach(item => {
       item.addEventListener('click', function() {
         // Remove the 'active' class from all navigation items
-        navItems.forEach(item => item.classList.remove('active'));
+        //navItems.forEach(item => item.classList.remove('active'));
   
         // Add the 'active' class to the clicked item
         this.classList.add('active');

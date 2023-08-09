@@ -116,8 +116,11 @@ body:not(.sidebar-active) .nav-item:hover {
   }
 
   .container-sidebar:not(.active) h1,
-  .container-sidebar:not(.active) .nav-text {
-  visibility: hidden;
+  .container-sidebar:not(.active) .item-label {
+    visibility: hidden;
+}
+  .container-sidebar:not(.active) .circle {
+    visibility: visible;
 }
 
   
@@ -191,6 +194,12 @@ body:not(.sidebar-active) .nav-item:hover {
     margin-right: 10px;
     vertical-align: middle;
   }
+
+  .nav-item:focus .circle {
+    box-shadow: 0 0 5px 2px rgba(0, 118, 169, 0.5);  /* This gives a soft glow effect. */
+    outline: none;  /* Removes the default outline. */
+  }
+  
 
 /* Active circle styling */
   .nav-item.active .circle {
