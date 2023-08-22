@@ -88,63 +88,55 @@ body:not(.sidebar-active) .nav-item:hover {
 }
 
 .content-box-half {
-	display: flex;
-	flex-direction: column;
-	padding: 0;
-	margin: 10px;
-	background-color: none;
-	
-  }
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 10px;
+  background-color: none;
+}
 
-  .box-half-top,
-  .box-half-bottom{
-	display: flex;
-	flex-direction: column;
-	padding: 14px;
-	width: 420px;
-  	height: 164px;
-	background-color: var(--white);
-	border-radius: 14px;
-  }
+.box-half-top,
+.box-half-bottom {
+  display: flex;
+  flex-direction: column;
+  padding: 14px;
+  width: 420px;
+  height: 164px;
+  background-color: var(--white);
+  border-radius: 14px;
+}
 
-
-  .box-half-top {
-	margin-bottom: 12px;
-  }
-
-
-
-
+.box-half-top {
+  margin-bottom: 12px;
+}
 
 .h3-container {
   padding-left: 18px;
   margin: 10px 0 4px 0;
 }
 
-
 .KPI-flex-horizontal {
-	margin: 10px 0;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .KPI-flex-verticle {
-	margin: 10px 0;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	width: 100px;
-	height: 300px;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100px;
+  height: 300px;
 }
 
-
-.KPI-container, 
-.KPI-container-lg{
-	width: 96px;
-	display: flex;
-	flex-direction: column;
-	justify-content: baseline
+.KPI-container,
+.KPI-container-lg {
+  width: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
 }
 
 /* Font Classes -------------------------------------------------------------------------------------------*/
@@ -175,34 +167,52 @@ h3 {
 }
 
 h4 {
-	font-family: "Roboto", Arial, sans-serif;
-	color: var(--navy-dblue);
-	font-size: 11px;
-	font-weight: 400;
-	margin: 0;
-	text-align: center;
+  font-family: "Roboto", Arial, sans-serif;
+  color: var(--navy-dblue);
+  font-size: 11px;
+  font-weight: 400;
+  margin: 0;
+  text-align: center;
 }
 
-
-
 .KPI-container p {
-	font-family: "Roboto", Arial, sans-serif;
-	color: var(--navy-dblue);
-	font-size: 36px;
-	padding: 0;
-	margin: 0;
-	text-align: center;
-	font-weight: 300;
+  font-family: "Roboto", Arial, sans-serif;
+  color: var(--navy-dblue);
+  font-size: 36px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-weight: 300;
 }
 
 .KPI-container-lg p {
-	font-family: "Roboto", Arial, sans-serif;
-	color: var(--navy-dblue);
-	font-size: 42px;
-	padding: 0;
-	margin: 0;
-	text-align: center;
-	font-weight: 500;
+  font-family: "Roboto", Arial, sans-serif;
+  color: var(--navy-dblue);
+  font-size: 42px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-weight: 500;
+}
+
+
+
+/* Table -------------------------------------------------------------------------------------------*/
+
+
+.myTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.myTable td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+.myTable tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
 
 /* Sidbar -------------------------------------------------------------------------------------------*/
